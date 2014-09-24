@@ -1,3 +1,4 @@
+#!/usr/bin/ruby
 name = "My name is Michael Scriven"
 puts name.class
 
@@ -28,21 +29,21 @@ puts names_and_ages.is_a? Hash
 
 
 #String Literal:
-"This is a string.".class
+puts "Michael".class
 
 #Fixnum Literal:
-100.class
+puts 100.class
 
 #Array Literal:
-[8,9,10].class
+puts [8,9,10].class
 
 
 #Hash Literal:
-{a:1, b:2}.class
+puts ({ first_name: "Mike" }).class
 
 #Symbol:
-myt_shirt = :the_iron_yard
-puts myt_shirt.class
+puts :the_iron_yard.class
+
 
 #String Constant:
 A_CONSTANT = "Mike"
