@@ -1,0 +1,10 @@
+def hi
+puts "hi"
+end
+hi
+
+
+def hello(name = 'World')
+puts "Hello #{name}"
+end
+hello("Mike")

@@ -1,21 +1,27 @@
 require 'date'
 
-if ARGV.size == 0
-print "What is your name?\n"
-name = $stdin.gets.chomp
+  if ARGV.size == 0
+    print "What is your name?\n"
+    name = $stdin.gets.chomp
 
-#Date Script
+    puts "Hi #{name.upcase}."
 
-print "What is your birthday?\n (Use format eg. 2014/09/09 2014-09-09)\n"
-birthday = gets.chomp
-birthday = Date.parse(birthday)
+        #Date Script
 
-puts "(#{birthday})"
 
-puts birthday.strftime('%B,%d,%Y')
+    print "What is your birthday?\n (Use format eg. 2014/09/09 2014-09-09)\n"
+    birthday = gets.chomp
+    birthday = Date.parse(birthday)
 
-puts "Happy Birthday #{name.upcase}."
+    puts "(#{birthday})"
 
-else
-puts "Happy Birthday #{ARGV[0]}."
-end
+
+    puts "Your birthday is #{birthday.strftime('%B,%d,%Y')}?"
+
+    puts "Happy belated Birthday #{name.upcase}."
+
+
+  else
+    puts "Hi #{ARGV[0]}, Happy Birthday."
+
+  end
