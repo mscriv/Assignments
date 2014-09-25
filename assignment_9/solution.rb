@@ -17,9 +17,9 @@ Where's the peck of pickled peppers Peter Piper picked?".split('pick')
 
 
 #Use gsub only to change the first passage to the second in the fewest amount of commands:
-original = ["You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You're on your own. And you know what you know. And YOU are the one who'll decide where to go..."]
-result = ["I have brains in my head. I have feet in my shoes. I can steer myself any direction I choose. I'm on my own. And I know what I know. And I'M the one who'll decide where to go..."]
-
+brains = "You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You're on your own. And you know what you know. And YOU are the one who'll decide where to go...".gsub(/You're/, "I'm").gsub(/yourself/, "myself").gsub(/your/, "my").gsub(/you/, "I").gsub(/You/, "I").gsub(/YOU are/, "I am")
+#{}"I have brains in my head. I have feet in my shoes. I can steer myself any direction I choose. I'm on my own. And I know what I know. And I'M the one who'll decide where to go..."]
+puts brains
 
 
 # Write code to determine how many times 'sh' occurs in the following phrase:
