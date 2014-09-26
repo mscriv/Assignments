@@ -15,13 +15,11 @@ require 'date'
 
     puts "(#{birthday})"
 
-
-    puts "Your birthday is #{birthday.strftime('%B,%d,%Y')}?"
-
-    puts "Happy belated Birthday #{name.upcase}."
+    puts "Happy belated Birthday #{name}, your birthday is #{birthday.strftime('%B,%d,%Y')}."
 
 
   else
-    puts "Hi #{ARGV[0]}, Happy Birthday."
+
+    puts "Hi #{ARGV[0]}, Your birthday is #{ARGV[1]}."
 
   end
