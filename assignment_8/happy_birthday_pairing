@@ -1,15 +1,29 @@
 require 'date'
 
+print "enter your name:\n"
+name = gets.chomp
+
+
+
+
+loop do
+
+
+
 print "Enter your birthday: ex. (2014-09-29):\n"
 
-born = $stdin.get.chomp.to_i
-born = Date.new(born)
+born = Date.parse($stdin.gets.chomp)
+
+
 today = Date.today
 age = today - born
+age.to_i
+age_2 = age.to_i/365
 
 if born == today
- puts "happy birthday"
+ puts "happy birthday #{name.capitalize!}"
+ break
  else
- puts "You are (#{age}/365.to_i)" years old.
+ puts "#{name.capitalize!}, You are #{age_2} years old."
  end
-end
+ end
