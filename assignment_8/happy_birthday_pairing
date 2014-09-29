@@ -1,0 +1,15 @@
+require 'date'
+
+print "Enter your birthday: ex. (2014-09-29):\n"
+
+born = $stdin.get.chomp.to_i
+born = Date.new(born)
+today = Date.today
+age = today - born
+
+if born == today
+ puts "happy birthday"
+ else
+ puts "You are (#{age}/365.to_i)" years old.
+ end
+end
