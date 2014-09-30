@@ -1,3 +1,5 @@
+#Movie script request
+
 require 'net/http'
 uri = URI('http://www.dailyscript.com/scripts/American_Psycho_Harron_Turner.html')
 script_text = Net::HTTP.get(uri)
