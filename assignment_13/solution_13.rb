@@ -14,7 +14,8 @@ if guess > num
     puts 'Your guess was too high'
 elsif guess < num
     puts 'Your guess was too low'
-elsif guess == num
+  else
+#elsif guess == num
     puts 'Good guess, Next stop Vegas!'
    break
 end

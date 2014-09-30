@@ -6,5 +6,5 @@ puts n
 
 
 10.times do |n|
-   puts "Number #{n+1}"
+   puts n
  end
