@@ -1,13 +1,12 @@
+count = 0
 
-    count = 0
 
-
-    num  = rand(1..3)
+    num  = rand(1..4)
 
     loop do
 
 
-        print "Enter a number 1 to 3 to play:\n"
+        print "Enter a number 1 to 4 to play:\n"
         guess = gets.chomp.to_i
 
         puts "Your guess was #{guess}."
@@ -21,7 +20,8 @@
     #elsif guess == num
         puts 'Good guess, Next stop Vegas!'
         print "The total number of guesses is:\n"
-        puts count 
+
+        puts count
       break
     end
   end
