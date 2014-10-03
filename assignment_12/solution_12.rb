@@ -12,7 +12,7 @@ array = ["What is your favorite color","Have you ever been surfing","How tall is
 
   answer = gets.chomp
 
-
+ break if answer.length == 0
   array_2.push("#{answer}")
 
 end
